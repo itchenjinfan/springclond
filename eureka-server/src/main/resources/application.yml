@@ -1,0 +1,13 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    register-with-eureka: false #是否注册到eurake
+    fetch-registry: false #是否从eurake获取信息
+    service-url:
+      defaultZone: http://localhost:7001/eureka #eurake的地址
+#  server:
+#    eviction-interval-timer-in-ms: 5000

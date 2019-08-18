@@ -1,0 +1,11 @@
+server:
+  port: 18082
+spring:
+  application:
+    name: user-comsumer
+eureka:
+  client:
+    register-with-eureka: true #是否注册到eurake
+    fetch-registry: true #是否从eurake获取信息
+    service-url:
+      defaultZone: http://localhost:7001/eureka #eurake的地址
